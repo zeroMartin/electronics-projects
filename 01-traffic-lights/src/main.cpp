@@ -20,7 +20,7 @@ void setup() {
 void loop() {
   switchState = digitalRead(2);
   if (switchState == LOW) {
-    //zeleno za aute
+    //green light for car, red light for pedestrian
     digitalWrite(greenCarLight, HIGH);
     digitalWrite(yellowCarLight, LOW);
     digitalWrite(redCarLight, LOW);
@@ -28,35 +28,35 @@ void loop() {
     digitalWrite(redPedestrianLight, HIGH);
   }
   else {
-    //pali se žuto za aute za stop
+    //yellow light for car, red light for pedestrian
     digitalWrite(greenCarLight, LOW);
     digitalWrite(yellowCarLight, HIGH);
     digitalWrite(redCarLight, LOW);
     digitalWrite(greenPedestrianLight, LOW);
     digitalWrite(redPedestrianLight, HIGH);
     delay(5000);
-    //pali se crveno za aute
+    //red light for car, red light for pedestrian
     digitalWrite(greenCarLight, LOW);
     digitalWrite(yellowCarLight, LOW);
     digitalWrite(redCarLight, HIGH);
     digitalWrite(greenPedestrianLight, LOW);
     digitalWrite(redPedestrianLight, HIGH);
     delay(5000);
-    //pali se zeleno za pješake
+    //red light for car, green light for pedestrian
     digitalWrite(greenCarLight, LOW);
     digitalWrite(yellowCarLight, LOW);
     digitalWrite(redCarLight, HIGH);
     digitalWrite(greenPedestrianLight, HIGH);
     digitalWrite(redPedestrianLight, LOW);
     delay(5000);
-    //pali se crveno za pješake
+    //red light for car, red light for pedestrian
     digitalWrite(greenCarLight, LOW);
     digitalWrite(yellowCarLight, LOW);
     digitalWrite(redCarLight, HIGH);
     digitalWrite(greenPedestrianLight, LOW);
     digitalWrite(redPedestrianLight, HIGH);
     delay(3000);
-    //gasi se žuto za aute za start
+    //yellow light for car, red light for pedestrian
       digitalWrite(greenCarLight, LOW);
     digitalWrite(yellowCarLight, HIGH);
     digitalWrite(redCarLight, LOW);
