@@ -4,8 +4,8 @@ A traffic light for cars and pedestrians on an Arduino Uno. Cars have green
 by default. When a pedestrian presses the button, the full crossing sequence
 runs once.
 
-![Schematic](schematic/01-traffic-lights1.jpeg)
-![Schematic](schematic/01-traffic-lights2.jpeg)
+![Schematic](images/01-traffic-lights1.jpeg)
+![Schematic](images/01-traffic-lights2.jpeg)
 
 ## How it works
 
@@ -42,6 +42,7 @@ After step 5 the program returns to idle.
 
 Each LED: pin -> LED anode -> LED cathode -> 220 ohm -> GND.
 The button connects 5V to D2. Full schematic: [schematic/01-traffic-lights.pdf](schematic/01-traffic-lights.pdf)
+![Schematic](schematic/traffic-lights.png)
 
 ## Build and upload
 

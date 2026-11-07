@@ -28,7 +28,7 @@ NN-project-name/
 ├── platformio.ini   board and build settings
 ├── src/main.cpp     source code
 ├── schematic/       KiCad project and exported PDF/PNG
-└── images/          photos of the finished build
+└── images/          photos of the finished build and simulator pictures
 ```
 
 ## Build and upload
