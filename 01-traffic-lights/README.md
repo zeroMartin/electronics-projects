@@ -51,6 +51,20 @@ Requires VS Code with the PlatformIO extension.
 pio run               # build
 pio run -t upload     # upload to the board
 ```
+## Try it in a simulator
+
+![Tinkercad circuit](images/tinkercad-circuit.png)
+
+You can rebuild this circuit in [Tinkercad Circuits](https://www.tinkercad.com/circuits)
+and run the code there without any hardware:
+
+1. Build the circuit as shown above (see the pin map for connections).
+2. Open the code editor and switch it to **Text** mode.
+3. Paste the contents of `src/main.cpp`.
+4. **Delete the first line** (`#include <Arduino.h>`). Tinkercad includes it
+   automatically, and keeping it causes a compile error.
+5. Click **Start Simulation**.
+
 ## Credits
 
 Own design. Inspired by Project 02 from the Arduino Starter Kit.
